@@ -114,7 +114,7 @@ export const PaymentCard = () => {
 
   useEffect(() => {
     setIsDisabledButton(isObjectEmpty(dirtyFields));
-  }, [dirtyFields]);
+  }, [{...dirtyFields}]);
 
   return (
     <CardWrapper>
